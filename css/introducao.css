@@ -9,20 +9,31 @@
 }
 
 .introducao h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   line-height: 1.125;
   margin-bottom: 30px;
   position: relative;
 }
 
+.introducao h1:hover{
+  color: #112690;
+  font-family: monospace;
+  font-size: 3.25rem;
+}
+
+.introducao h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .introducao h1::before {
-  content: "";
+  content: '';
   display: block;
   width: 130px;
   height: 100px;
-  background: url("../img/decorador.svg") no-repeat center;
+  background: url('../img/decorador.svg') no-repeat center;
   position: absolute;
-  top: -10px;
+  top: -19px;
   left: -90px;
 }
 
@@ -35,6 +46,10 @@
   .introducao h1 {
     font-size: 3rem;
   }
+  .introducao h1 a {
+    text-decoration: none ;
+    color: inherit;
+  }
   .introducao h1::before {
     left: -90px;
     top: -23px;
@@ -45,6 +60,10 @@
   .introducao {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+  }
+  .introducao h1 a {
+    text-decoration: none ;
+    color: inherit;
   }
   .introducao h1 {
     font-size: 2rem;
@@ -59,6 +78,10 @@
 @media (max-width: 400px) {
   .introducao img {
     display: none;
+  }
+  .introducao h1 a {
+    text-decoration: none ;
+    color: inherit;
   }
   .introducao {
     grid-template-columns: 1fr;

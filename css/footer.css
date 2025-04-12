@@ -20,7 +20,7 @@
 
 .footer-contato li {
   font-weight: bold;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   line-height: 1.1;
   color: #fff;
   margin-bottom: 30px;
@@ -30,10 +30,11 @@
   color: #fff;
 }
 
-.footer-copy {
+.footer-copy a {
   grid-column: 1/-1;
   font-size: 1.125rem;
   color: #8f8f8f;
+  text-decoration: none;
 }
 
 @media (max-width: 800px) {
