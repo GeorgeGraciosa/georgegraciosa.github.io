@@ -1,8 +1,9 @@
 #grid-container {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  padding: 32px 56px;
   background: #222;
+  align-items: center;
 }
 #grid-container a {
   display: inline-block;
@@ -16,12 +17,12 @@
 }
 
 #nav-list li {
-  padding-left: 20px;
-  font-size: 1.25rem;
+  padding-left: 40px;
+  font-size: 1.5rem;
 }
 
 #home-title {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 #grid-container a:hover {
