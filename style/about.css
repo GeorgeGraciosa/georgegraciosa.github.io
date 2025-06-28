@@ -1,0 +1,34 @@
+#sobre-menu {
+  padding: 104px 0;
+  background-color: #ededed;
+  justify-items: center;
+  text-align: center;
+}
+
+#sobre-menu h2 {
+  font-size: 48px;
+  padding-bottom: 48px;
+}
+
+#sobre-menu p {
+  font-size: 24px;
+  max-width: 82ch;
+  line-height: 2.5rem;
+  padding-bottom: 112px;
+}
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-size: 28px;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+#skills li {
+  padding: 20px 40px;
+  background-color: #d9d9d9;
+  border-radius: 6px;
+  flex: 0 1 10%;
+}
