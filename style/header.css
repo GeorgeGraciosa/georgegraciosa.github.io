@@ -29,3 +29,8 @@
   color: #ffbb00;
   transform: scale(1.1);
 }
+
+#grid-container h3 a:hover {
+  color: #ffbb00;
+  transform: scale(1.05);
+}
