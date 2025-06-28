@@ -1,5 +1,5 @@
 #sobre-menu {
-  padding: 104px 0;
+  padding: 104px 0 124px 0;
   background-color: #ededed;
   justify-items: center;
   text-align: center;
@@ -23,7 +23,6 @@
   gap: 40px;
   font-size: 28px;
   justify-content: center;
-  padding-bottom: 20px;
 }
 
 #skills li {

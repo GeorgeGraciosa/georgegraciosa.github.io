@@ -1,0 +1,39 @@
+#projetos-menu {
+  background-color: #2e2e2e;
+  color: #fff;
+  padding: 104px 0;
+  justify-items: center;
+  text-align: center;
+}
+
+#projetos-menu h2 {
+  font-size: 48px;
+  padding-bottom: 48px;
+}
+
+#projetos-menu p {
+  font-size: 24px;
+  padding-bottom: 112px;
+}
+
+#slides-wrapper {
+  grid-column: 1/-1;
+  overflow: hidden;
+}
+
+#slides {
+  display: flex;
+}
+
+#slides li {
+  flex-shrink: 0;
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+#slides li img {
+  max-width: 90%;
+  height: auto;
+}
