@@ -9,26 +9,28 @@
 #home-text {
   grid-column: 2;
   text-align: center;
+  justify-items: center;
   padding-bottom: 120px;
 }
 
 #home-text h1 {
   padding-bottom: 56px;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 #home-text p {
   max-width: 80ch;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #project-button {
   font-family: 'Roboto', sans-serif;
   justify-self: center;
   grid-column: 2;
-  width: 208px;
-  height: 64px;
-  font-size: 1.5rem;
+  width: 184px;
+  height: 56px;
+  font-size: 1.2rem;
+  font-weight: 500;
   letter-spacing: 1.1px;
   border-radius: 6px;
   border: 1px solid #222;

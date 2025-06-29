@@ -6,12 +6,12 @@
 }
 
 #sobre-menu h2 {
-  font-size: 48px;
+  font-size: 40px;
   padding-bottom: 48px;
 }
 
 #sobre-menu p {
-  font-size: 24px;
+  font-size: 20px;
   max-width: 82ch;
   line-height: 2.5rem;
   padding-bottom: 112px;
@@ -21,12 +21,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  font-size: 28px;
+  font-size: 20px;
   justify-content: center;
 }
 
 #skills li {
-  padding: 20px 40px;
+  padding: 16px 24px;
   background-color: #d9d9d9;
   border-radius: 6px;
   flex: 0 1 10%;
