@@ -8,11 +8,12 @@
 }
 
 #contatos-menu h3 {
-  font-size: 36px;
+  justify-self: center;
+  font-size: 32px;
 }
 
 #contatos-menu p {
-  font-size: 32px;
+  font-size: 28px;
   max-width: 30ch;
 }
 
@@ -38,7 +39,7 @@
 
 #contatos-menu #footer {
   grid-column: 1/-1;
-  font-size: 16px;
+  font-size: 12px;
   justify-self: center;
   max-width: 100%;
   padding-bottom: 32px;
