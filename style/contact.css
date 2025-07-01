@@ -3,7 +3,7 @@
   color: #cdcdcd;
   display: grid;
   grid-template-columns: 1fr auto;
-  padding: 100px;
+  padding: 112px;
   padding-bottom: 0;
 }
 
@@ -48,4 +48,30 @@
 #socials li:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+#social-wrap {
+  position: relative;
+}
+
+#alert {
+  font-family: 'Roboto';
+  margin-top: 8px;
+  justify-self: center;
+  background-color: #333;
+  padding: 6px 6px;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px solid #333;
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(20px);
+  z-index: 1000;
+  opacity: 0;
+}
+
+#alert.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(0);
 }
