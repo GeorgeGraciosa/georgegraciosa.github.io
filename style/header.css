@@ -4,6 +4,11 @@
   padding: 24px 56px;
   background: #222;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 #grid-container a {
   display: inline-block;
@@ -29,4 +34,3 @@
   color: #ffbb00;
   transform: scale(1.05);
 }
-

@@ -18,7 +18,9 @@ a {
   text-decoration: none;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 .kod-font {
   font-family: 'Kodchasan', monospace;
