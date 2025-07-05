@@ -102,7 +102,7 @@
   max-width: 80ch;
 }
 
-#slide-text-mobile {
+.slide-text-mobile {
   display: none;
 }
 
@@ -122,18 +122,19 @@
 
 @media (max-width: 700px) {
   #projetos-menu {
-    padding-top: 80px;
+    padding-top: 60px;
   }
 
   #projetos-menu h2 {
-    font-size: 24px;
+    font-size: 20px;
     padding-bottom: 32px;
     justify-self: left;
     padding-left: 20px;
+    text-align: left;
   }
 
   #projetos-menu p {
-    font-size: 16px;
+    font-size: 14px;
     padding-bottom: 20px;
     max-width: 32ch;
     text-align: left;
@@ -151,32 +152,34 @@
   }
 
   #slides li {
-    max-width: 320px;
+    max-width: 400px;
     margin-top: 20px;
     opacity: 1;
+    background-color: #333;
   }
 
   #slide-description {
     display: none;
   }
 
-  #slide-text-mobile {
+  #slides .slide-text-mobile {
     display: block;
     font-family: 'Roboto', sans-serif;
     padding-top: 20px;
+    justify-self: center;
   }
 
-  #slide-text-mobile h3 a {
+  #slides .slide-text-mobile h3 a {
     font-size: 16px;
     color: #ffcc33;
   }
 
-  #slide-text-mobile p {
+  #slides .slide-text-mobile p {
     padding-top: 20px;
     font-size: 14px;
-    max-width: 50ch;
-    text-align: center;
+    max-width: 40ch;
     line-height: 1.2rem;
     padding-left: 0;
+    text-align: center;
   }
 }
