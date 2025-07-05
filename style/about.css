@@ -31,3 +31,26 @@
   border-radius: 6px;
   flex: 0 1 10%;
 }
+
+@media (max-width: 700px) {
+  #sobre-menu {
+    padding: 80px 20px;
+  }
+
+  #sobre-menu h2 {
+    font-size: 24px;
+    padding-bottom: 32px;
+    justify-self: left;
+  }
+
+  #sobre-menu p {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  #skills ul {
+    justify-content: left;
+    gap: 10px;
+    font-size: 18px;
+  }
+}

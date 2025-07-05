@@ -75,3 +75,40 @@
   pointer-events: auto;
   transform: translate(0);
 }
+
+@media (max-width: 700px) {
+  #contatos-menu {
+    padding: 60px 0 0 0;
+  }
+
+  #contatos-menu h3 {
+    display: none;
+  }
+
+  #contatos-menu p {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+
+  #socials {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+  }
+
+  #socials img {
+    width: 32px;
+    height: auto;
+  }
+
+  #line {
+    margin: 0 32px 16px 32px;
+  }
+
+  #contatos-menu #footer {
+    grid-column: 1/-1;
+    font-size: 10px;
+    justify-self: center;
+    padding: 0 0 20px 0;
+  }
+}
