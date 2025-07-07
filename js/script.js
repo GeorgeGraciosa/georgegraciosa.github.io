@@ -1,4 +1,5 @@
 import Projetos from '../js/projetos.js';
+import Mobile from '../js/mobile.js';
 
 const projetos = new Projetos(
   '#slides',
@@ -7,3 +8,6 @@ const projetos = new Projetos(
   '#alert'
 );
 projetos.init();
+
+const mobile = new Mobile('#menu-mobile', '#nav-list');
+mobile.init();
