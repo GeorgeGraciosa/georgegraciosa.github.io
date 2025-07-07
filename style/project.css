@@ -181,5 +181,10 @@
     line-height: 1.2rem;
     padding-left: 0;
     text-align: center;
+    justify-self: center;
+  }
+
+  #slides li.active {
+    transform: scale(0.85);
   }
 }

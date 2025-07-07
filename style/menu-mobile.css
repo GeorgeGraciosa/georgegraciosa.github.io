@@ -12,7 +12,7 @@
     cursor: pointer;
     position: relative;
     z-index: 300;
-    margin-right: 40px;
+    margin-right: 8px;
   }
   #menu-mobile::before {
     content: '';
@@ -23,15 +23,18 @@
     box-shadow: 0 7px #fff, 0 -7px #fff;
   }
   #nav-list {
+    display: none;
+  }
+  #nav-list.active {
     display: block;
     position: absolute;
     background-color: #222;
-    width: 160px;
+    width: 120px;
     z-index: 200;
     top: 0;
     padding: 80px 0px 20px 0px;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
-    margin-right: 40px;
+    right: 0px;
   }
   #nav-list li {
     padding: 12px 16px;
@@ -42,6 +45,6 @@
     margin-left: 4px;
   }
   #grid-container {
-    padding-left: 20px;
+    padding: 24px 0px 24px 20px;
   }
 }
