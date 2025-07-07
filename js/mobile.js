@@ -36,7 +36,7 @@ export default class Mobile {
         link.addEventListener(event, (e) => {
           setTimeout(() => {
             this.closeMenu();
-          }, 300);
+          }, 1000);
         })
       );
     });
