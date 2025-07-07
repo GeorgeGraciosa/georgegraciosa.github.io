@@ -13,7 +13,7 @@ export default class Mobile {
     this.closeMenu = this.closeMenu.bind(this);
   }
 
-  openMenu(event) {
+  openMenu() {
     this.menuList.classList.toggle('active');
     this.menuButton.classList.toggle('active');
   }
@@ -31,7 +31,7 @@ export default class Mobile {
 
   addCloseOnClick() {
     const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach((link) => link.addEventListener('click', this.closeMenu));
+    links.forEach((link) => link.addEventListener(this.events, this.closeMenu));
   }
 
   init() {
