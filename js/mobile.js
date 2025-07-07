@@ -32,13 +32,11 @@ export default class Mobile {
   addCloseOnClick() {
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach((link) => {
-      this.events.forEach((event) =>
-        link.addEventListener(event, (e) => {
-          setTimeout(() => {
-            this.closeMenu();
-          }, 1000);
-        })
-      );
+      link.addEventListener('click', () => {
+        setTimeout(() => {
+          this.closeMenu();
+        }, 400);
+      });
     });
   }
 
