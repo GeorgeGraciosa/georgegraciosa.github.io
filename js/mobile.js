@@ -31,7 +31,11 @@ export default class Mobile {
 
   addCloseOnClick() {
     const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach((link) => link.addEventListener(this.events, this.closeMenu));
+    links.forEach((link) => {
+      this.events.forEach((event) =>
+        link.addEventListener(event, this.closeMenu)
+      );
+    });
   }
 
   init() {
