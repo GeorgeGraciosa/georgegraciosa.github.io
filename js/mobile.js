@@ -33,7 +33,11 @@ export default class Mobile {
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach((link) => {
       this.events.forEach((event) =>
-        link.addEventListener(event, this.closeMenu)
+        link.addEventListener(event, (e) => {
+          setTimeout(() => {
+            this.closeMenu();
+          }, 300);
+        })
       );
     });
   }
