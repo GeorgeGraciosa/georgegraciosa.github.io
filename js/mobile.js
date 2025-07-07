@@ -10,20 +10,17 @@ export default class Mobile {
     }
 
     this.openMenu = this.openMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
   }
 
   openMenu(event) {
-    if (event.type === 'touchstart') {
-      this.touchTimeout = true;
-      setTimeout(() => {
-        this.touchTimeout = false;
-      }, 300);
-    }
-
-    if (event.type === 'click' && this.touchTimeout) return;
-
     this.menuList.classList.toggle('active');
     this.menuButton.classList.toggle('active');
+  }
+
+  closeMenu() {
+    this.menuList.classList.remove('active');
+    this.menuButton.classList.remove('active');
   }
 
   addMobileEvents() {
@@ -32,9 +29,15 @@ export default class Mobile {
     );
   }
 
+  addCloseOnClick() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach((link) => link.addEventListener('click', this.closeMenu));
+  }
+
   init() {
     if (this.menuButton && this.menuList) {
       this.addMobileEvents();
+      this.addCloseOnClick();
     }
     return this;
   }
