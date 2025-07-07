@@ -12,7 +12,16 @@ export default class Mobile {
     this.openMenu = this.openMenu.bind(this);
   }
 
-  openMenu() {
+  openMenu(event) {
+    if (event.type === 'touchstart') {
+      this.touchTimeout = true;
+      setTimeout(() => {
+        this.touchTimeout = false;
+      }, 300);
+    }
+
+    if (event.type === 'click' && this.touchTimeout) return;
+
     this.menuList.classList.toggle('active');
     this.menuButton.classList.toggle('active');
   }
