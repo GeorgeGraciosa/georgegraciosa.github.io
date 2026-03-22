@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
   #menu-mobile {
     display: flex;
     background-color: #222;
@@ -15,12 +15,14 @@
     margin-right: 10px;
   }
   #menu-mobile::before {
-    content: '';
+    content: "";
     display: inline-block;
     height: 2px;
     width: 26px;
     background-color: #fff;
-    box-shadow: 0 7px #fff, 0 -7px #fff;
+    box-shadow:
+      0 7px #fff,
+      0 -7px #fff;
   }
   #nav-list {
     display: none;
