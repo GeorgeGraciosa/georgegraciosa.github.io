@@ -12,28 +12,28 @@ export default class Projetos {
   }
 
   activeSlide(index) {
-    this.slideArray.forEach((item) => item.classList.remove('active'));
-    this.descriptionArray.forEach((item) => item.classList.remove('active'));
+    this.slideArray.forEach((item) => item.classList.remove("active"));
+    this.descriptionArray.forEach((item) => item.classList.remove("active"));
 
-    this.slideArray[index].classList.add('active');
-    this.descriptionArray[index].classList.add('active');
+    this.slideArray[index].classList.add("active");
+    this.descriptionArray[index].classList.add("active");
   }
 
   onClick() {
     this.slideArray.forEach((item, index) => {
-      item.addEventListener('click', () => this.activeSlide(index));
+      item.addEventListener("click", () => this.activeSlide(index));
     });
   }
 
   copyEmail() {
-    this.email.addEventListener('click', () => {
-      const emailCopy = 'george.graciosa@gmail.com';
+    this.email.addEventListener("click", () => {
+      const emailCopy = "george.graciosa@gmail.com";
 
       navigator.clipboard.writeText(emailCopy).then(() => {
-        this.alert.classList.add('show');
+        this.alert.classList.add("show");
 
         setTimeout(() => {
-          this.alert.classList.remove('show');
+          this.alert.classList.remove("show");
         }, 1500);
       });
     });
@@ -41,7 +41,7 @@ export default class Projetos {
 
   init() {
     this.createSlideArray();
-    this.activeSlide(1);
+    this.activeSlide(0);
     this.onClick();
     this.copyEmail();
   }
