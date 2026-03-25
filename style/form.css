@@ -62,24 +62,37 @@
 .form button {
   display: block;
   padding: 1rem;
-  background-color: #ffa500;
+  color: #222;
+  background-color: #ffb430;
   font-family: inherit;
   text-transform: uppercase;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.2s ease;
 }
 
 .form button:hover,
 .form button:focus {
   outline: none;
-  font-weight: bolder;
-  background-color: #ffb430;
+  color: #000;
+  background-color: #ffa500;
 }
 
 @media (max-width: 1124px) {
   .form {
     max-width: 500px;
+  }
+
+  .form h2 {
+    font-size: 20px;
+  }
+
+  .form label,
+  .form input,
+  .form textarea,
+  .form button {
+    display: block;
+    width: 60%;
   }
 }

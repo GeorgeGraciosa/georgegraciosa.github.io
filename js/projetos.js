@@ -25,24 +25,9 @@ export default class Projetos {
     });
   }
 
-  copyEmail() {
-    this.email.addEventListener("click", () => {
-      const emailCopy = "george.graciosa@gmail.com";
-
-      navigator.clipboard.writeText(emailCopy).then(() => {
-        this.alert.classList.add("show");
-
-        setTimeout(() => {
-          this.alert.classList.remove("show");
-        }, 1500);
-      });
-    });
-  }
-
   init() {
     this.createSlideArray();
     this.activeSlide(0);
     this.onClick();
-    this.copyEmail();
   }
 }
