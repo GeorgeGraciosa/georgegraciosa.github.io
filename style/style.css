@@ -1,7 +1,8 @@
-@import 'geral.css';
-@import 'header.css';
-@import 'home.css';
-@import 'about.css';
-@import 'project.css';
-@import 'contact.css';
-@import 'menu-mobile.css';
+@import "geral.css";
+@import "header.css";
+@import "home.css";
+@import "about.css";
+@import "project.css";
+@import "contact.css";
+@import "menu-mobile.css";
+@import "form.css";

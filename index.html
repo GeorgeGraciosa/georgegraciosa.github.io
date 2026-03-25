@@ -69,8 +69,22 @@
     </div>
   </div>
 
-  <div id="contatos-menu">
+  <footer id="contatos-menu">
     <p class="roboto-regular-font">Estou disponível para novos projetos no momento. Entre em contato comigo para agendarmos uma conversa.</p>
+
+    <div id="formulario-contato">
+      <form action="https://formsubmit.co/george.graciosa@gmail.com" method="POST" class="form">
+        <h2>Formulário de Contato</h2>
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" placeholder="Nome" required>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="email@email.com" required>
+        <label for="message">Mensagem</label>
+        <textarea type="text" name="message" placeholder="Escreva aqui a sua mensagem" required></textarea>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
 
     <div id="social-wrap">
       <h3 class='roboto-font'>Redes Sociais</h3>
@@ -84,7 +98,7 @@
 
     <div id="line"></div>
     <p class="kod-regular-font" id="footer">© Copyright 2025. Feito por George Graciosa</p>
-  </div>
+  </footer>
 
   <script type="module" src="/js/script.js"></script>
 </body>
